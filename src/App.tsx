@@ -1,9 +1,13 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import Home from "./pages/Home.tsx"
 
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
